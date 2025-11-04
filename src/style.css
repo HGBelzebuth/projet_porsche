@@ -48,36 +48,32 @@ header {
   }
 }
 
-.background_circles {
+.circle_left {
   position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* pour mettre en arriere plan */
-}
-
-.circles {
-  position: absolute;
+  top: 100px;
+  left: -100px;
   height: 500px;
   width: 500px;
   border-radius: 100%;
-  background: radial-gradient(circle #374a6d 0%, #374a6d 70%);
-  filter: blur(100px);
-}
-
-.circle_left {
-  top: -150;
-  left: -150;
+  background: radial-gradient(circle, #374a6d 0%, #374a6d 70%);
+  filter: blur(250px);
+  z-index: -1;
 }
 
 .circle_right {
-  bottom: -150px;
-  right: -150px;
+  position: fixed;
+  top: 600px;
+  right: -100px;
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  background: radial-gradient(circle, #374a6d 0%, #374a6d 70%);
+  filter: blur(250px);
+  z-index: -1;
 }
 
 .home {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,11 +81,13 @@ header {
   gap: 50px;
 
   .specificat {
+    margin-top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
       color: gray;
+    
     }
     img {
       height: 32px;
@@ -105,12 +103,12 @@ header {
     justify-content: space-between;
   }
   button {
-    margin-top: 30px;
+    margin-top: 70px;
     background: none;
     border: none;
     img {
-      height: 150px;
-      width: 150px;
+      height: 200px;
+      width: 200px;
     }
   }
   .cards {
@@ -120,6 +118,7 @@ header {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    
   }
   .card_1 {
     display: flex;
