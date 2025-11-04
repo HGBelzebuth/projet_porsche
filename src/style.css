@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Exo;
+  font-size:x-large;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+}
+
+header {
+  position : fixed;
+  height: 50px;
+  width: 1440px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    list-style: none;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.background_circles {
+  
+.circle {
+  .circle_left {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+border-radius: 100%;
+background: radial-gradient(circle #374a6d 0%, #374a6d 70%);
+filter: blur(100px);
+  }
+  
+  .circle_rigth {
+
+  }
+}
+}
+
+
+.home {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  .specificat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: gray;
+    }
+      img {
+      height: 32px;
+      width: 32px;
+    }
+  }
+   img {
+      height: 400px;
+    }
+  div {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  button {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    img {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  .cards {
+    margin-top: 20px;
+    height: 100px;
+    width: 700px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .card_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    p {
+      color: gray;
+    }
+    img {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
